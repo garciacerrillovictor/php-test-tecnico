@@ -1,0 +1,10 @@
+USE homestead;
+CREATE TABLE IF NOT EXISTS subs (
+    sub_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    description TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP
+)  ENGINE=INNODB;
